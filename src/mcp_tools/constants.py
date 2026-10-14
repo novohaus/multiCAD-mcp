@@ -40,6 +40,7 @@ AUTOCAD_WINDOW_CLASSES = [
     "AutoCAD Main Window",
     "ACAD:Main",
     "AutoCADMainFrame",
+    "BricscadMainWindow",
 ]
 
 # ========== Selection Set Modes ==========

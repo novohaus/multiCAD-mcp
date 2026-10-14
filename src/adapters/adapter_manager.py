@@ -106,7 +106,8 @@ class AdapterRegistry:
         """Internal auto-detection logic within the locked context."""
         from adapters import AutoCADAdapter
 
-        cad_priorities = ["zwcad", "autocad", "bricscad", "gcad"]
+        # bricscad before autocad: BricsCAD also registers "AutoCAD.Application"
+        cad_priorities = ["zwcad", "bricscad", "autocad", "gcad"]
 
         for ct in cad_priorities:
             try:
